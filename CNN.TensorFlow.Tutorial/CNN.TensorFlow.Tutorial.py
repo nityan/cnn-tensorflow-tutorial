@@ -14,7 +14,7 @@ class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer',
 
 plt.figure(figsize=(10, 10))
 for i in range(25):
-    plt.subplot(5, 5, i+1)
+    plt.subplot(5, 5, i + 1)
     plt.xticks([])
     plt.yticks([])
     plt.grid(False)
@@ -37,13 +37,9 @@ model.add(layers.Flatten())
 model.add(layers.Dense(64, activation='relu'))
 model.add(layers.Dense(10))
 
-model.compile(optimizer='adam',
-              loss=tf.keras.losses.SparseCategoricalCrossentropy(
-                  from_logits=True),
-              metrics=['accuracy'])
+model.compile(optimizer='adam', loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
 
-history = model.fit(train_images, train_labels, epochs=10,
-                    validation_data=(test_images, test_labels))
+history = model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, test_labels))
 
 plt.plot(history.history['accuracy'], label='accuracy')
 plt.plot(history.history['val_accuracy'], label='val_accuracy')
