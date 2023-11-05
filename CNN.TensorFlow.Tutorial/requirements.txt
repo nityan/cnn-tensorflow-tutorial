@@ -69,7 +69,7 @@ patsy==0.5.1
 pickleshare==0.7.5
 Pillow==9.3.0
 pip==20.2.4
-pmdarima==1.5.3
+pmdarima==2.0.4
 prometheus-client==0.7.1
 prompt-toolkit==3.0.5
 protobuf==3.14.0
