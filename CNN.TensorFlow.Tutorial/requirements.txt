@@ -21,7 +21,7 @@ Cython==0.29.16
 decorator==4.4.2
 defusedxml==0.6.0
 demjson==2.2.4
-entrypoints==0.3
+entrypoints==0.4
 gast==0.3.3
 google-auth==1.23.0
 google-auth-oauthlib==0.4.2
