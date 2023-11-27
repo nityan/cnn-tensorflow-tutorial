@@ -51,7 +51,7 @@ lab==8.0
 Markdown==3.3.3
 MarkupSafe==1.1.1
 matplotlib==3.8.1
-mistune==2.0.3
+mistune==3.0.2
 multidict==4.7.5
 nbconvert==6.5.1
 nbformat==5.0.6
